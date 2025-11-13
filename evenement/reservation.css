@@ -1,0 +1,157 @@
+/* Base */
+@font-face {
+    font-family:gang of tree ;
+    src: url(../font/go3v2.ttf);
+  } 
+
+.logo-fixed {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 150px;
+  z-index: 1000;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+}
+
+
+/* Header */
+header {
+  background-color: #ff6f3c;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.logo {
+  margin: 0;
+  font-size: 2.5em;
+  color: rgb(6, 6, 6);
+  font-family: gang of tree;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  opacity: 0.8;
+}
+
+/* Intro */
+.intro {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #ffe0cc;
+}
+
+.intro h1 {
+ margin: 0;
+  font-size: 2.5em;
+  color: rgb(6, 6, 6);
+  font-family: gang of tree;
+}
+
+.intro p {
+  font-size: 1.2em;
+  color: #444;
+}
+
+/* Form */
+.form-section {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+input, select, textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #ff6f3c;
+  outline: none;
+}
+
+button {
+  padding: 14px;
+  background-color: #ff6f3c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e65c2a;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 25px;
+  background-color: #ff6f3c;
+  color: white;
+  margin-top: 60px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .intro h1 {
+    font-size: 2em;
+  }
+
+  .form-section {
+    padding: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

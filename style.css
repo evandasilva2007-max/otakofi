@@ -1,0 +1,149 @@
+/* STYLE GÉNÉRAL */
+@font-face {
+    font-family:gang of tree ;
+    src: url(./font/go3v2.ttf);
+  } 
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+  text-transform: uppercase;
+}
+
+/* EN-TÊTE */
+header {
+  background-color:  #ff6f3c;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  width: 320px;
+  margin-bottom: 40px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+  color: rgb(6, 6, 6);
+  font-family: gang of tree;
+}
+
+/* NAVIGATION */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffe0c2;
+}
+
+/* SECTION PRINCIPALE */
+main {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.hero {
+  background-image: url('images/galerie1.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  color: white;
+  box-shadow: inset 0 0 100px rgba(0,0,0,0.5);
+}
+
+.hero h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.btn {
+  background-color:  #ff6f3c;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background-color: #ffb07c;
+}
+
+.presentation, .gastronomie, .bibliotheque, .atelier, .evenement, .communaute {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.presentation h2,
+.gastronomie h2,
+.bibliotheque h2,
+.atelier h2,
+.evenement h2,
+.communaute h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #ff6f3c;
+  font-family: gang of tree;
+}
+
+.presentation p,
+.gastronomie p,
+.bibliotheque p,
+.atelier p,
+.evenement p,
+.communaute p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 20px;
+  text-transform: none;
+}
+
+.evenement ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.evenement li {
+  font-size: 1.1em;
+  margin: 10px 0;
+  color: #333;
+  text-transform: none;
+}
+
+/* PIED DE PAGE */
+footer {
+  background-color:  #ff6f3c;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
